@@ -66,24 +66,72 @@
 
 		<main class="main">
 			<header class="header">
-
-				<!-- <input type="checkbox" id="burger-toggle">
-				<label for="burger-toggle" class="burger-container">
-					<div class="burger-line"></div>
-					<div class="burger-line"></div>
-					<div class="burger-line"></div>
-				</label>
-				<nav class="nav-menu">
-					<ul>
-						<li><a href="#home">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#services">Services</a></li>
-						<li><a href="#portfolio">Portfolio</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</nav> -->
+				
+				<nav role="navigation" class="burger-container">
+					<div id="menuToggle">
+						<input type="checkbox" id="menuCheckbox" />
+						<span></span>
+						<span></span>
+						<span></span>
+						<ul id="menu">
+							<aside class="sidebar sidebar-mobile">
+								<div class="logo-block">
+									<div class="logo">
+										logo
+									</div>
+								</div>
+								<div class="sidebar__group sidebar__group-mobile">
+									<div class="sidebar__block">
+										<img src="./assets/layout.svg" alt="layout.svg">
+										<p>Dashboard</p>
+									</div>
+									<div class="sidebar__block active">
+										<img src="./assets/message.svg" alt="layout.svg">
+										<p>Chat</p>
+									</div>
+									<div class="sidebar__block ">
+										<img src="./assets/user.svg" alt="layout.svg">
+										<p>Profile</p>
+									</div>
+									<div class="sidebar__block">
+										<img src="./assets/wand-stars-svgrepo-com.svg" alt="layout.svg">
+										<p>Team</p>
+									</div>
+									<div class="sidebar__block">
+										<img src="./assets/people-svgrepo-com.svg" alt="layout.svg">
+										<p>Clients</p>
+									</div>
+									<div class="sidebar__block">
+										<img src="./assets/newspaper-journal-svgrepo-com.svg" alt="layout.svg">
+										<p>Reports</p>
+									</div>
+									<div class="sidebar__block">
+										<img src="./assets/setting-svgrepo-com.svg" alt="layout.svg">
+										<p>Settings</p>
+									</div>
+									<div class="sidebar__block">
+										<img src="./assets/waiting-room.svg" alt="layout.svg">
+										<p>Зал ожидание</p>
+									</div>
+								</div>
+								<div class="waiting-block">
+									<p>Ожидающих диалогов: <span>10</span></p>
+									<p>Ваши диалоги в ожидание: <span>10</span></p>
+									<p>Asas: <span>9999</span></p>
+									<p>Диалогов в зале ожидания:<span>100</span></p>
+								</div>
+					
+								<div class="exit-block">
+									<img src="./assets/logout.svg" alt="layout.svg">
+									<p>Exit</p>
+								</div>
+							</aside>
+						</ul>
+					</div>
+				</nav>
 				<div class="header-navbar-mobile">
-					<div class="header-navbar-mobile__avatar">
+					
+					<div class="header-navbar-mobile__avatar" >
 						<img class="header-navbar-icon" src="./assets/apps-svgrepo-com.svg" alt="">
 					</div>
 					<div class="header-navbar-mobile__avatar">
@@ -120,7 +168,29 @@
 						</div>
 					</div>
 				</div>
+				<div class="header__block-mobile">
+					<div class="circleProgress-container">
+						<div class="circleProgress_wrapper">
+							<div class="wrapper right">
+								<div class="circleProgress rightcircle right_cartoon"></div>
+							</div>
+							<div class="wrapper left">
+								<div class="circleProgress leftcircle left_cartoon"></div>
+							</div>
+							<div class="timer-mobile-block">
+								<h4 id="timer">10</h4>
+								<p>seconds</p>
+							</div>
+						</div>
+					</div>
 
+					<div class="header__block-mobile__right">
+						<input type="text">
+						<div class="notfilication-mobile">
+							<img src="/assets/notification.svg" alt="notfilication.svg">
+						</div>
+					</div>
+				</div>
 
 
 			</header>
