@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./responce.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="sidebar">
+			<div class="logo-block">
+				<div class="logo">
+					logo
+				</div>
+			</div>
+			<aside class="sidebar__group">
+				<div class="sidebar__block">
+					<img src="./assets/layout.svg" alt="layout.svg">
+					<p>Dashboard</p>
+				</div>
+				<div class="sidebar__block active">
+					<img src="./assets/message.svg" alt="layout.svg">
+					<p>Chat</p>
+				</div>
+				<div class="sidebar__block ">
+					<img src="./assets/user.svg" alt="layout.svg">
+					<p>Profile</p>
+				</div>
+				<div class="sidebar__block">
+					<img src="./assets/wand-stars-svgrepo-com.svg" alt="layout.svg">
+					<p>Team</p>
+				</div>
+				<div class="sidebar__block">
+					<img src="./assets/people-svgrepo-com.svg" alt="layout.svg">
+					<p>Clients</p>
+				</div>
+				<div class="sidebar__block">
+					<img src="./assets/newspaper-journal-svgrepo-com.svg" alt="layout.svg">
+					<p>Reports</p>
+				</div>
+				<div class="sidebar__block">
+					<img src="./assets/setting-svgrepo-com.svg" alt="layout.svg">
+					<p>Settings</p>
+				</div>
+				<div class="sidebar__block">
+					<img src="./assets/waiting-room.svg" alt="layout.svg">
+					<p>Зал ожидание</p>
+				</div>
+			</aside>
+			<div class="waiting-block">
+				<p>Ожидающих диалогов: <span>10</span></p>
+				<p>Ваши диалоги в ожидание: <span>10</span></p>
+				<p>Asas: <span>9999</span></p>
+				<p>Диалогов в зале ожидания:<span>100</span></p>
+			</div>
+
+			<div class="exit-block">
+				<img src="./assets/logout.svg" alt="layout.svg">
+				<p>Exit</p>
+			</div>
+		</div>
+
+		<main class="main">
+			<header class="header">
+
+				<!-- <input type="checkbox" id="burger-toggle">
+				<label for="burger-toggle" class="burger-container">
+					<div class="burger-line"></div>
+					<div class="burger-line"></div>
+					<div class="burger-line"></div>
+				</label>
+				<nav class="nav-menu">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav> -->
+				<div class="header-navbar-mobile">
+					<div class="header-navbar-mobile__avatar">
+						<img class="header-navbar-icon" src="./assets/apps-svgrepo-com.svg" alt="">
+					</div>
+					<div class="header-navbar-mobile__avatar">
+						<img class="header-navbar-picture" src="./assets/manee.jpg" alt="">
+					</div>
+					<div class="header-navbar-mobile__avatar">
+						<img class="header-navbar-icon" src="./assets/equalizer-filter-filtering-svgrepo-com.svg" alt="">
+					</div>
+					<div class="header-navbar-mobile__avatar">
+						<img class="header-navbar-picture" src="./assets/manee.jpg" alt="">
+					</div>
+					<div class="header-navbar-mobile__avatar">
+						<img class="header-navbar-icon" src="./assets/equalizer-filter-filtering-svgrepo-com.svg" alt="">
+					</div>
+					<div class="header-navbar-mobile__avatar">
+						<img class="header-navbar-icon" src="./assets/chat-round-dots-svgrepo-com.svg" alt="">
+					</div>
+				</div>
+				<div class="header__block">
+					<div class="timer">
+						<p>Timer: <span>188s</span></p>
+					</div>
+					<div class="header-profile">
+						<textarea type="text"></textarea>
+						<div class="header-profile__block">
+							<img src="./assets/notification.svg" alt="notification.svg">
+							<div class="main-profile__block">
+								<img class="main-profile" src="./assets/manee.jpg" alt="mane.jpg">
+								<div class="main-profile__text">
+									<h5>Sarah Wood</h5>
+									<p>Admin</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+			</header>
+
+			<div class="messenger-block">
+				<div class="boy-side" id="profile-description">
+					<div class="profile-pictures">
+						<div class="profile-block__avatar">
+							<img src="./assets/manee.jpg" alt="mane.jpg">
+							<h4>Anna White</h4>
+							<p>Model</p>
+						</div>
+
+						<div class="shared-images">
+							<div class="shared-images__header profile">
+								<button>More</button>
+							</div>
+							<div class="shared-images__block">
+								<img src="./assets/Cute Dog.jpg" alt="cute.dog.jpg">
+								<img src="./assets/Cute Dog.jpg" alt="cute.dog.jpg">
+								<img src="./assets/Cute Dog.jpg" alt="cute.dog.jpg">
+								<img src="./assets/Cute Dog.jpg" alt="cute.dog.jpg">
+								<img src="./assets/Cute Dog.jpg" alt="cute.dog.jpg">
+								<img src="./assets/Cute Dog.jpg" alt="cute.dog.jpg">
+								<img src="./assets/Cute Dog.jpg" alt="cute.dog.jpg">
+								<img src="./assets/Cute Dog.jpg" alt="cute.dog.jpg">
+								<img src="./assets/Cute Dog.jpg" alt="cute.dog.jpg">
+
+							</div>
+						</div>
+					</div>
+
+
+					<div class="boy-side__information__block">
+						<h2>Данные</h2>
+						<div class="boy-side__information" id="infoContainer">
+							<div class="information_block">
+								<h4>Имя</h4>
+								<span>Артем</span>
+							</div>
+							<div class="information_block">
+								<h4>user</h4>
+								<span>М</span>
+							</div>
+							<div class="information_block">
+								<h4>местонахождение</h4>
+								<span>Волгоград улица 5 и</span>
+							</div>
+							<div class="information_block">
+								<h4>дата регистрации</h4>
+								<span>Артем</span>
+							</div>
+							<div class="information_block">
+								<h4>последнее посещение сайта</h4>
+								<span>Артем</span>
+							</div>
+							<div class="information_block">
+								<h4>количество сообщении</h4>
+								<span>Артем</span>
+							</div>
+							<div class="information_block">
+								<h4>интересы</h4>
+								<span>Артем</span>
+							</div>
+							<div class="information_block">
+								<h4>возраст</h4>
+								<span>Артем</span>
+							</div>
+							<div class="information_block">
+								<h4>др</h4>
+								<span>Артем</span>
+							</div>
+							<div class="information_block">
+								<h4>рост</h4>
+								<span>Артем</span>
+							</div>
+							<div class="information_block">
+								<h4>Телосложение</h4>
+								<span>Артем</span>
+							</div>
+							<div class="information_block">
+								<h4>баланс</h4>
+								<span>Артем</span>
+							</div>
+							<div class="information_block">
+								<h4>расстояние</h4>
+								<span>Артем</span>
+							</div>
+							<div class="information_block">
+								<h4>курит</h4>
+								<span>Артем</span>
+							</div>
+							<div class="information_block">
+								<h4>пёт</h4>
+								<span>Артем</span>
+							</div>
+							<div class="information_block">
+								<h4>статус</h4>
+								<span>Артем</span>
+							</div>
+							<div class="information_block">
+								<h4>питомцы</h4>
+								<span>Артем</span>
+							</div>
+							<button class="toggle-button" id="toggleButton">More</button>
+						</div>
+					</div>
+
+					<div class="boy-side__form__parent">
+						<h2>Новые данные</h2>
+						<div class="boy-side__form">
+							<div class="boy-side__form__block">
+								<h4>Имя:</h4>
+								<input type="text">
+							</div>
+							<div class="boy-side__form__block">
+								<h4>Дети?:</h4>
+								<input type="text">
+							</div>
+							<div class="boy-side__form__block">
+								<h4>Профессия:</h4>
+								<input type="text">
+							</div>
+							<div class="boy-side__form__block">
+								<h4>В отношениях?:</h4>
+								<input type="text">
+							</div>
+							<div class="boy-side__form__block">
+								<h4>Дата рождения:</h4>
+								<input type="text">
+							</div>
+							<div class="boy-side__form__block">
+								<h4>Хобби:</h4>
+								<input type="text">
+							</div>
+							<div class="boy-side__form__block">
+								<h4>Нравится:</h4>
+								<input type="text">
+							</div>
+							<div class="boy-side__form__block">
+								<h4>Табу:</h4>
+								<input type="text">
+							</div>
+							<div class="boy-side__form__block">
+								<h4>примечание:</h4>
+								<input type="text">
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="chat">
+					<div class="chat-header">
+						<div class="chat-header__information">
+							<h5>Первый контакт: <span>дата</span></h5>
+							<h4>Anna White</h4>
+							<p>Online</p>
+						</div>
+						<div class="chat-header__buttons">
+							<img src="./assets/search.svg" alt="search.svg">
+							<img src="./assets/more.svg" alt="more.svg">
+						</div>
+					</div>
+					<main class="msger-chat">
+						<div class="msg left-msg ">
+							<div class="msg-img">
+								<img src="./assets/manee.jpg" alt="manee.jpg">
+							</div>
+							<div class="msg-bubble msg-bubble-left">
+								<div class="msg-info">
+									<div class="msg-info-time">12:45</div>
+								</div>
+								<div class="msg-text">
+									Hello! How was you date yesterday?
+								</div>
+							</div>
+						</div>
+						<div class="msg right-msg">
+							<div class="msg-img">
+								<img src="./assets/manee.jpg" alt="manee.jpg">
+							</div>
+							<div class="msg-bubble msg-bubble-right">
+								<div class="msg-info right-time">
+									<div class="msg-info-time">12:23 AM</div>
+								</div>
+								<div class="msg-text">
+									Hey)) i`d say so so
+								</div>
+							</div>
+						</div>
+						<div class="msg right-msg">
+							<div class="msg-img">
+								<img src="./assets/manee.jpg" alt="manee.jpg">
+							</div>
+							<div class="voice-message-block msg-bubble msg-bubble-right ">
+								<div class="msg-info right-time">
+									<div class="msg-info-time">12:46</div>
+								</div>
+								<div class="msg-text">
+									<div class="voice-message">
+										<div class="play-wrapper">
+											<div class="play-wrapper__circle">
+												<div class="play-wrapper__circle-pulse"></div>
+												<div class="button-play" onclick="playPause()"></div>
+											</div>
+										</div>
+										<div class="flex-col">
+											<!-- Voice message bars -->
+											<div class="bars">
+												<div class="white-bars" style="height: 16%;"></div>
+												<div class="white-bars" style="height: 20%;"></div>
+												<div class="white-bars" style="height: 50%;"></div>
+												<div class="white-bars" style="height: 75%;"></div>
+												<div class="white-bars" style="height: 66%;"></div>
+												<div class="white-bars" style="height: 33%;"></div>
+												<div class="white-bars" style="height: 50%;"></div>
+												<div class="bar" style="height: 50%;"></div>
+												<div class="bar" style="height: 66%;"></div>
+												<div class="bar" style="height: 40%;"></div>
+												<div class="bar" style="height: 33%;"></div>
+												<div class="bar" style="height: 20%;"></div>
+												<div class="bar" style="height: 50%;"></div>
+												<div class="bar" style="height: 100%;"></div>
+												<div class="bar" style="height: 66%;"></div>
+												<div class="bar" style="height: 75%;"></div>
+												<div class="bar" style="height: 40%;"></div>
+												<div class="bar" style="height: 50%;"></div>
+												<div class="bar" style="height: 75%;"></div>
+												<div class="bar" style="height: 66%;"></div>
+												<div class="bar" style="height: 50%;"></div>
+												<div class="bar" style="height: 40%;"></div>
+												<div class="bar" style="height: 50%;"></div>
+												<div class="bar" style="height: 80%;"></div>
+												<div class="bar" style="height: 33%;"></div>
+												<div class="bar" style="height: 16%;"></div>
+												<div class="bar" style="height: 20%;"></div>
+												<div class="bar" style="height: 50%;"></div>
+												<div class="bar" style="height: 100%;"></div>
+												<div class="bar" style="height: 80%;"></div>
+												<div class="bar" style="height: 66%;"></div>
+												<div class="bar" style="height: 40%;"></div>
+												<div class="bar" style="height: 50%;"></div>
+												<div class="bar" style="height: 66%;"></div>
+												<div class="bar" style="height: 33%;"></div>
+											</div>
+											<!-- END Voice message bars -->
+											<div class="flex-between">
+												<span id="time">20:19</span>
+											</div>
+										</div>
+										<audio id="audio-message"
+											src="https://actions.google.com/sounds/v1/science_fiction/robot_code.ogg"></audio>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</main>
+					<form action="#" class="send-message-block">
+						<div class="send-message-block__input">
+							<input type="text" placeholder="Type something here...">
+							<img src="./assets/smile.svg" alt="smile.jpg.svg">
+							<img src="./assets/gift-box.svg" alt="gift.svg">
+						</div>
+						<button></button>
+					</form>
+				</div>
+
+				<div class="girl-side">
+					<div class="profile-block">
+						<div class="profile-block__avatar">
+							<img src="./assets/manee.jpg" alt="mane.jpg">
+							<h4>Anna White</h4>
+							<p>Model</p>
+						</div>
+						<div class="profile-block__buttons">
+							<div class="profile-block__icon">
+								<img src="./assets/like-svgrepo-com.svg" alt="cam-recorder.svg">
+								<p>Like</p>
+							</div>
+							<div class="profile-block__icon">
+								<img src="./assets/waiting-room-svgrepo-com.svg" alt="cam-recorder.svg">
+								<p>Отправить в зал ожидания</p>
+							</div>
+							<div class="profile-block__icon">
+								<img src="./assets/more copy.svg" alt="cam-recorder.svg">
+								<p>More</p>
+							</div>
+							<div class="profile-block__icon">
+								<img src="./assets/map-pin-svgrepo-com.svg" alt="cam-recorder.svg">
+								<p>показать на карте</p>
+							</div>
+							<div class="profile-block__icon">
+								<img src="./assets/report-svgrepo-com.svg" alt="cam-recorder.svg">
+								<p>Отчет чата</p>
+							</div>
+							<div class="profile-block__icon">
+								<img src="./assets/description-svgrepo-com.svg" alt="cam-recorder.svg">
+								<p>показать описание</p>
+							</div>
+							<div class="profile-block__icon">
+								<img src="./assets/video-svgrepo-com.svg" alt="cam-recorder.svg">
+								<p>Video</p>
+							</div>
+							<div class="profile-block__icon">
+								<img src="./assets/telephone-svgrepo-com.svg" alt="cam-recorder.svg">
+								<p>Call</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="girls-side__information__block">
+						<h2>Новые данные</h2>
+						<div class="girls-side__information" id="infoBlock">
+							<div class="information_block">
+								<h4>Имя</h4>
+								<span>Артем</span>
+							</div>
+							<div class="information_block">
+								<h4>user</h4>
+								<span>М</span>
+							</div>
+							<div class="information_block">
+								<h4>местонахождение</h4>
+								<span>Волгоград улица 5 и</span>
+							</div>
+							<div class="information_block">
+								<h4>дата регистрации</h4>
+								<span>Артем</span>
+							</div>
+							<div class="information_block">
+								<h4>последнее посещение сайта</h4>
+								<span>Артем</span>
+							</div>
+							<div class="information_block">
+								<h4>количество сообщении</h4>
+								<span>Артем</span>
+							</div>
+							<div class="information_block">
+								<h4>интересы</h4>
+								<span>Артем</span>
+							</div>
+							<div class="information_block">
+								<h4>возраст</h4>
+								<span>Артем</span>
+							</div>
+							<div class="information_block">
+								<h4>др</h4>
+								<span>Артем</span>
+							</div>
+							<div class="information_block">
+								<h4>рост</h4>
+								<span>Артем</span>
+							</div>
+							<div class="information_block">
+								<h4>Телосложение</h4>
+								<span>Артем</span>
+							</div>
+							<div class="information_block">
+								<h4>баланс</h4>
+								<span>Артем</span>
+							</div>
+							<div class="information_block">
+								<h4>расстояние</h4>
+								<span>Артем</span>
+							</div>
+							<div class="information_block">
+								<h4>курит</h4>
+								<span>Артем</span>
+							</div>
+							<div class="information_block">
+								<h4>пёт</h4>
+								<span>Артем</span>
+							</div>
+							<div class="information_block">
+								<h4>статус</h4>
+								<span>Артем</span>
+							</div>
+							<div class="information_block">
+								<h4>питомцы</h4>
+								<span>Артем</span>
+							</div>
+							<button id="toggleRightButton">More</button>
+						</div>
+					</div>
+
+					<div class="girl-side__parent">
+						<h2>Новые данные</h2>
+						<div class="girl-side__form">
+							<div class="girl-side__form__block">
+								<h4>Имя:</h4>
+								<input type="text">
+							</div>
+							<div class="girl-side__form__block">
+								<h4>Дети?:</h4>
+								<input type="text">
+							</div>
+							<div class="girl-side__form__block">
+								<h4>Профессия:</h4>
+								<input type="text">
+							</div>
+							<div class="girl-side__form__block">
+								<h4>В отношениях?:</h4>
+								<input type="text">
+							</div>
+							<div class="girl-side__form__block">
+								<h4>Дата рождения:</h4>
+								<input type="text">
+							</div>
+							<div class="girl-side__form__block">
+								<h4>Хобби:</h4>
+								<input type="text">
+							</div>
+							<div class="girl-side__form__block">
+								<h4>Нравится:</h4>
+								<input type="text">
+							</div>
+							<div class="girl-side__form__block">
+								<h4>Табу:</h4>
+								<input type="text">
+							</div>
+							<div class="girl-side__form__block">
+								<h4>примечание:</h4>
+								<input type="text">
+							</div>
+						</div>
+					</div>
+
+					<div class="shared-images">
+						<div class="shared-images__header">
+							<h4>Shared Images</h4>
+							<button>More</button>
+						</div>
+						<div class="shared-images__block">
+							<img src="./assets/Cute Dog.jpg" alt="cute.dog.jpg">
+							<img src="./assets/Cute Dog.jpg" alt="cute.dog.jpg">
+							<img src="./assets/Cute Dog.jpg" alt="cute.dog.jpg">
+							<img src="./assets/Cute Dog.jpg" alt="cute.dog.jpg">
+							<img src="./assets/Cute Dog.jpg" alt="cute.dog.jpg">
+							<img src="./assets/Cute Dog.jpg" alt="cute.dog.jpg">
+							<img src="./assets/Cute Dog.jpg" alt="cute.dog.jpg">
+							<img src="./assets/Cute Dog.jpg" alt="cute.dog.jpg">
+							<img src="./assets/Cute Dog.jpg" alt="cute.dog.jpg">
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</main>
+		<div class="modal">
+			<div class="modal-content">
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- <footer class="footer">
+		<h4>Отправленных/полученных сообщении: <span>(Сегодня: 1/5. в эту неделю: 1/5. Прошлую неделю 5/5. Этот месяц:
+				14/20. Прошлый месяц 10/25. Итого: 23/55 )</span></h4>
+	</footer> -->
+</body>
+
+<script src="/script.js"></script>
+
+</html>

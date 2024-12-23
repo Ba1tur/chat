@@ -1,0 +1,304 @@
+/* Burger Icon Container */
+.burger-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  cursor: pointer;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 5px;
+  background: hwb(0 100% 0% / 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px #0000001a;
+  transition: 0.3s;
+}
+
+/* Burger Icon Lines */
+.burger-line {
+  width: 100%;
+  height: 3px;
+  background-color: #ecf0f1;
+  border-radius: 2px;
+  transform-origin: center;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Checkbox Hack */
+#burger-toggle {
+  display: none;
+}
+
+/* Navigation Styles */
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: -420px;
+  width: 300px;
+  z-index: 1;
+  height: 100%;
+  background: linear-gradient(135deg, #2c3e50 0%, #273849 100%);
+  transition: left 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
+  box-shadow: -4px 0 15px #00000033;
+  overflow-y: auto;
+  padding-top: 100px;
+}
+
+.nav-menu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: #ffffff0d;
+  backdrop-filter: blur(10px);
+}
+
+.nav-menu ul {
+  list-style-type: none;
+}
+
+.nav-menu ul li {
+  margin: 0 15px;
+  border-bottom: 1px solid #ffffff1a;
+}
+
+.nav-menu ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-menu ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background-color: #ecf0f1;
+  transition: left 0.3s ease;
+}
+
+.nav-menu ul li a:hover::after {
+  left: 0;
+}
+
+/* Burger Icon Animation on Checkbox Checked */
+#burger-toggle:checked ~ .burger-container .burger-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+#burger-toggle:checked ~ .burger-container .burger-line:nth-child(2) {
+  opacity: 0;
+}
+
+#burger-toggle:checked ~ .burger-container .burger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Navigation Slide In */
+#burger-toggle:checked ~ .nav-menu {
+  left: 0;
+}
+
+.header-navbar-mobile {
+  display: flex;
+  max-width: 650px;
+  width: 100%;
+  justify-content: space-between;
+  display: none;
+}
+
+.header-navbar-mobile__avatar {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #fff;
+}
+
+.header-navbar-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.header-navbar-picture {
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.modal {
+  display: flex;
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 100%;
+  height: max-content;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  opacity: 1;
+  animation: modal-show 0.5s 1 forwards;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 720px;
+  width: 100%;
+  height: 100vh;
+  padding: 20px 30px 40px 30px;
+  border-radius: 25px;
+  background-color: white;
+}
+
+@media screen and (max-width: 1440px) {
+  .sidebar {
+    /* display: none; */
+    width: 200px;
+    padding-right: 50px;
+  }
+  .container {
+    max-width: 100%;
+    justify-content: center;
+  }
+  .sidebar__block > img {
+    width: 19px;
+    height: 19px;
+  }
+  .sidebar__block > p {
+    font-size: 12px;
+  }
+  .waiting-block > p {
+    font-size: 9px;
+  }
+  .main {
+    max-width: 1062px;
+    width: 100%;
+  }
+  .header {
+    /* max-width: 162px; */
+    width: 100%;
+    /* border-radius: 15px 15px 0 0; */
+  }
+  .header-profile {
+    max-width: 530px;
+  }
+  .boy-side {
+    /* max-width: 350px; */
+    /* width: 100%; */
+    width: 300px;
+  }
+  .shared-images__block > img {
+    width: 65px;
+    height: 65px;
+  }
+  .chat {
+    max-width: 500px;
+  }
+  .girl-side {
+    /* max-width: 350px; */
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 1225px) {
+  .chat {
+    max-width: 450px;
+  }
+  .boy-side {
+    width: 280px;
+  }
+  .girl-side {
+    width: 280px;
+  }
+  .container {
+    /* -moz-transform: scale(0.9, 0.9);
+    -ms-transform: scale(0.9, 0.9);
+    -webkit-transform: scale(0.9, 0.9);
+    -o-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9); */
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    display: none;
+  }
+
+  .header {
+    border-radius: 15px 15px 0 0;
+  }
+  .shared-images__block > img {
+    width: 75px;
+    height: 75px;
+  }
+  .shared-images__block {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 45px;
+  }
+  .boy-side {
+    border-radius: 0 0 0 15px;
+  }
+}
+
+@media screen and (max-width: 986px) {
+  .boy-side {
+    display: none;
+  }
+  .chat {
+    max-width: 590px;
+  }
+  .messenger-block {
+    justify-content: center;
+  }
+  .girl-side {
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .girl-side {
+    display: none;
+  }
+  .header-navbar-mobile {
+    display: flex;
+  }
+  .header {
+    background: #f8f6f7;
+    height: auto;
+    justify-content: center;
+    padding: 15px 15px 15px 15px;
+    flex-direction: column;
+    gap: 20px;
+    /* border: 1px solid black; */
+  }
+  .chat {
+    max-width: 100%;
+  }
+}
+
+@keyframes modal-show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
