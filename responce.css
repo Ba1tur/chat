@@ -506,6 +506,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  .container{
+    padding: 0 1% 0 1%;
+  }  
   .girl-side {
     display: none;
   }
@@ -546,7 +549,7 @@
     justify-items: center;
   }
   .shared-images__block-mobile > img {
-    
+
   }
 }
 
