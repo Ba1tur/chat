@@ -501,9 +501,6 @@
   .chat{
     max-width: 490px;
   }
-  .girl-side{
-
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -552,6 +549,21 @@
   }
   .shared-images__block-mobile > img {
 
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .msg-bubble {
+    max-width: 320px;
+  }
+  .msger-chat{
+    padding: 20px 5px 10px 0;
+  }
+  /* .left-msg{
+    padding-left: 20px;
+  } */
+  .send-message-block {
+    gap: 15px;
   }
 }
 
