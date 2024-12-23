@@ -184,12 +184,13 @@
 }
 
 .modal {
-  display: none;
+  display: flex;
   position: absolute;
   top: 120px;
   left: 0;
   width: 100%;
   height: 100svh;
+  padding: 0 10px 0 10px;
   justify-content: center;
   align-items: center;
   /* background-color: rgba(0, 0, 0, 0.5); */
@@ -199,10 +200,10 @@
 
 .modal-content {
   position: relative;
-  max-width: 720px;
   width: 100%;
+  display: flex;
+  justify-content: center;
   height: 100svh;
-  padding: 20px 30px 40px 30px;
   border-radius: 25px;
   background-color: white;
 }
@@ -403,7 +404,7 @@
   .boy-side {
     width: 300px;
   }
-  .boy-side__form__block > h4 ,  {
+  .boy-side__form__block > h4 {
     font-size: 12px;
   }
   .boy-side__form__block > input {
@@ -436,6 +437,9 @@
   }
   .girl-side {
     width: 280px;
+  }
+  .msg-bubble {
+    max-width: 330px;
   }
 }
 
@@ -515,7 +519,6 @@
     padding: 15px 15px 15px 15px;
     flex-direction: column;
     gap: 20px;
-    /* border: 1px solid black; */
   }
   .header__block {
     display: none;
@@ -528,6 +531,22 @@
   }
   .chat {
     max-width: 100%;
+  }
+  .msg-bubble {
+    max-width: 430px;
+    width: 100%;
+  }
+  .boy-side-mobile{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .shared-images__block-mobile{
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+  .shared-images__block-mobile > img {
+    
   }
 }
 
