@@ -9,7 +9,7 @@
 }
 
 div::-webkit-scrollbar-track {
-	background: none;
+  background: none;
 }
 
 div::-webkit-scrollbar {
@@ -35,13 +35,13 @@ body {
 }
 
 .container {
-	max-width: 1440px;
-	width: 100%;
+  max-width: 1440px;
+  width: 100%;
   height: 100vh;
-	margin: 0 auto;
+  margin: 0 auto;
   padding: 10px;
   background: #e2e7f2;
-	border-radius: 15px;
+  border-radius: 15px;
   display: flex;
   /* justify-content: center; */
 }
@@ -57,7 +57,7 @@ button {
 
 .sidebar {
   position: relative;
-  width: 200px;
+  width: 450px;
   height: 100vh;
 
   padding: 24px 0 24px 0;
@@ -163,15 +163,16 @@ button {
 }
 
 .main {
+  position: relative;
   max-width: 1240px;
   width: 100%;
   height: 100vh;
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
-	position: relative;
+  position: relative;
   width: 100%;
   height: 64px;
 
@@ -184,11 +185,12 @@ button {
   background: #fdfdfd;
 }
 
-.header__block{
+.header__block {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 5px;
 }
 
 .timer {
@@ -200,7 +202,7 @@ button {
   align-items: center;
   padding-left: 6px;
 
-  border-radius: 0 15px 15px 0;
+  border-radius: 15px;
   background: red;
 }
 
@@ -213,14 +215,13 @@ button {
   padding-right: 35px;
 }
 
-.header-profile > textarea {
+.header-profile__hints {
   width: 255px;
-  height: 30px;
-  resize: none;
-  border: 2px solid #b4b4b5;
+  height: 35px;
   background: #f4f5f9;
   border-radius: 10px;
   outline: none;
+  background: #ffccd0;
 }
 
 .header-profile__block {
@@ -243,9 +244,6 @@ button {
   object-fit: cover;
 }
 
-.main-profile__text {
-}
-
 .header-profile__block > img {
   width: 20px;
   height: 20px;
@@ -253,14 +251,14 @@ button {
 
 .messenger-block {
   display: flex;
-  height: 95vh;
+  height: 90vh;
 }
 
 .boy-side {
   /* width: 400px; */
-	width: 350px;
+  width: 350px;
   /* max-height: 691px; */
-  height: 95vh;
+  height: 94vh;
 
   padding: 15px 15px 15px 15px;
   background-color: #f5f7fc;
@@ -285,6 +283,7 @@ button {
 }
 
 .boy-side__information__block {
+  position: relative;
   width: 100%;
   /* height: 500px; */
   margin-top: 25px;
@@ -296,7 +295,6 @@ button {
 }
 
 .boy-side__information {
-  position: relative;
   width: 100%;
   height: 200px;
 
@@ -306,7 +304,7 @@ button {
   overflow: hidden;
   margin-top: 5px;
 
-  border-radius: 15px 15px 0 0;
+  border-radius: 15px;
   background: #9cc6ef;
   padding: 3px 10px 3px 10px;
 }
@@ -314,11 +312,13 @@ button {
 .toggle-button {
   position: absolute;
   width: 50px;
-  right: 0;
-  left: 0;
-  margin-left: auto;
-  margin-right: auto;
   top: 0;
+  right: 0;
+
+  font-size: 15px;
+  color: #b4b4b5;
+  background: none;
+  border: none;
 }
 
 .boy-side__information.expanded {
@@ -363,31 +363,31 @@ button {
 .boy-side__form__block {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 5px;
   gap: 5px;
 }
 
 .boy-side__form__block > h4 {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .boy-side__form__block > input {
   width: 120px;
-	height: 20px;
+  height: 20px;
 
   font-size: 11px;
   padding-left: 5px;
   border: 2px solid #b4b4b5;
   background: #f4f5f9;
-  border-radius: 10px;
+  border-radius: 8px;
   outline: none;
 }
 
 .chat {
   position: relative;
   max-width: 608.49px;
-	width: 100%;
-  /* height: 551px; */
+  width: 100%;
   height: 95vh;
 
   background: #eef0f7;
@@ -447,9 +447,9 @@ button {
 }
 
 .msger-chat {
-  /* height: 100%; */
+  height: 77vh;
   overflow-y: auto;
-  padding: 60px 10px 10px 10px;
+  padding: 50px 10px 80px 10px;
   display: flex;
   flex-direction: column;
   gap: 60px;
@@ -472,6 +472,7 @@ button {
 .msg-img {
   width: 40px;
   height: 40px;
+  object-fit: cover;
   margin-right: 10px;
   background: #ddd;
   background-repeat: no-repeat;
@@ -696,7 +697,7 @@ button {
 .girl-side {
   width: 350px;
   /* max-height: 691px; */
-  min-height: 96vh;
+  height: 95vh;
   background-color: #f5f7fc;
   display: flex;
   flex-direction: column;
@@ -708,6 +709,7 @@ button {
 }
 
 .girls-side__information__block {
+  position: relative;
   margin-top: 25px;
 }
 
@@ -786,7 +788,6 @@ button {
 }
 
 .girls-side__information {
-  position: relative;
   width: 95%;
   margin-top: 5px;
   height: 200px;
@@ -795,7 +796,7 @@ button {
   flex-direction: column;
   gap: 1.9px;
   overflow: hidden;
-  border-radius: 15px 15px 0 0;
+  border-radius: 15px;
   background: #f784bd;
   padding: 3px 10px 3px 10px;
 }
@@ -835,25 +836,25 @@ button {
 .girl-side__form__block {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 5px;
   gap: 5px;
 }
 
 .girl-side__form__block > h4 {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .girl-side__form__block > input {
   width: 120px;
-	height: 20px;
-
+  height: 20px;
 
   font-size: 11px;
   padding-left: 5px;
   outline: none;
   border: 2px solid #b4b4b5;
   background: #f4f5f9;
-  border-radius: 10px;
+  border-radius: 8px;
   outline: none;
 }
 
@@ -877,7 +878,6 @@ button {
 
 .shared-images__header.profile {
   justify-content: flex-end;
-  padding-right: 13px;
 }
 
 .shared-images__header > h4 {
@@ -894,15 +894,89 @@ button {
 .shared-images__block {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 12px 15px;
+  gap: 12px 10px;
   margin-top: 10px;
 }
 
 .shared-images__block > img {
-  width: 75px;
-  height: 75px;
+  width: 70px;
+  height: 70px;
   border-radius: 15px;
   object-fit: cover;
+}
+
+.modal-boys {
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  height: 96vh;
+  display: none;
+  z-index: 5;
+}
+
+.modal-girls {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  height: 96vh;
+  display: none;
+  z-index: 6;
+}
+
+.modal-boy-form {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  height: 96vh;
+  display: none;
+  z-index: 7;
+}
+
+.modal-girl-form{
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  height: 96vh;
+  display: none;
+  z-index: 7;
+}
+
+.modal-boy-form__parent {
+  width: 100%;
+  height: 100vh;
+
+  margin-top: 0;
+  background: #fff;
+}
+
+
+
+.modal-boy-form__parent > h2 {
+  text-align: center;
+  font-size: 28px;
+}
+
+.modal-boy-form__parent > .boy-side__form {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-boy-form__parent > .boy-side__form > .boy-side__form__block{
+  width: 100%;
+  max-width: 620px;
+  padding: 0 10px 0 10px;
+}
+
+.modal-boy-form__parent > .boy-side__form > .boy-side__form__block > h4 {
+  font-size: 18px;
+}
+
+.modal-boy-form__parent > .boy-side__form > .boy-side__form__block > input {
+  width: 120px;
 }
 
 .footer {
@@ -911,4 +985,3 @@ button {
   height: 50px;
   margin: 0 auto;
 }
-
