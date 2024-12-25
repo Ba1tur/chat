@@ -344,9 +344,8 @@ button {
   margin-top: 12px;
 }
 
-.boy-side__information__block > h2 {
+.boy-side__information > h2 {
   font-size: 14px;
-  padding-left: 5px;
 }
 
 .boy-side__information {
@@ -361,13 +360,13 @@ button {
 
   border-radius: 15px;
   background: #9cc6ef;
-  padding: 3px 10px 3px 10px;
+  padding: 5px 10px 3px 10px;
 }
 
 .toggle-button {
   position: absolute;
   width: 50px;
-  top: 0;
+  top: 5px;
   right: 0;
 
   font-size: 15px;
@@ -405,9 +404,8 @@ button {
   margin-top: 12px;
 }
 
-.boy-side__form__parent > h2 {
+.boy-side__form > h2 {
   font-size: 14px;
-  padding-left: 5px;
 }
 
 .boy-side__form {
@@ -789,9 +787,8 @@ button {
   margin-top: 12px;
 }
 
-.girls-side__information__block > h2 {
+.girls-side__information > h2 {
   font-size: 14px;
-  padding-left: 5px;
 }
 
 .profile-block {
@@ -878,7 +875,7 @@ button {
   overflow: hidden;
   border-radius: 15px;
   background: #f784bd;
-  padding: 3px 10px 3px 10px;
+  padding: 5px 10px 3px 10px;
 }
 
 .girls-side__information.expanded {
@@ -888,7 +885,7 @@ button {
 .girls-side__information > button {
   width: 70px;
   position: absolute;
-  top: 0;
+  top: 5px;
   right: 0;
 }
 
@@ -897,7 +894,7 @@ button {
   margin-top: 12px;
 }
 
-.girl-side__parent > h2 {
+.girl-side__form > h2 {
   font-size: 14px;
   padding-left: 5px;
 }
