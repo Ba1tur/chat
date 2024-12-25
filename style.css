@@ -360,14 +360,14 @@ button {
 
   border-radius: 15px;
   background: #9cc6ef;
-  padding: 5px 10px 3px 10px;
+  padding: 5px 15px 3px 15px;
 }
 
 .toggle-button {
   position: absolute;
   width: 50px;
   top: 5px;
-  right: 0;
+  right: 5px;
 
   font-size: 15px;
   color: #b4b4b5;
@@ -386,7 +386,7 @@ button {
 .information_block {
   display: flex;
   justify-content: space-between;
-  gap: 5px;
+  gap: 10px;
 }
 
 .information_block > h4 {
@@ -875,7 +875,7 @@ button {
   overflow: hidden;
   border-radius: 15px;
   background: #f784bd;
-  padding: 5px 10px 3px 10px;
+  padding: 5px 15px 3px 15px;
 }
 
 .girls-side__information.expanded {
