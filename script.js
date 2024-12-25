@@ -1,63 +1,53 @@
 const infoContainer = document.getElementById("infoContainer");
+const infoContainerMobile = document.getElementById("infoContainerMobile");
 const infoBlock = document.getElementById("infoBlock");
+const infoBlockMobile = document.getElementById("infoBlockMobile");
 const infoAbout = document.getElementById("infoAbout");
 const toggleButton = document.getElementById("toggleButton");
+const toggleButtonMobile = document.getElementById("toggleButtonMobile");
 const toggleRightButton = document.getElementById("toggleRightButton");
 const toggleButtonProfile = document.getElementById("toggleButtonProfile");
+const infoBlockRightMobile = document.getElementById("infoBlockRightMobile");
+const toggleRightButtonMobile = document.getElementById(
+  "toggleRightButtonMobile"
+);
+const infoAboutMobile = document.getElementById("infoAboutMobile");
+const toggleButtonProfileMobile = document.getElementById(
+  "toggleButtonProfileMobile"
+);
+
 const checkbox = document.getElementById("myCheckbox");
+const checkbox2 = document.getElementById("checkbox2");
 const menu = document.getElementById("menu");
 
-toggleButton.addEventListener("click", () => {
-  if (infoContainer.classList.contains("expanded")) {
-    infoContainer.classList.remove("expanded");
-    toggleButton.textContent = "More";
-  } else {
-    infoContainer.classList.add("expanded");
-    toggleButton.textContent = "Hide";
-  }
-});
+const toggleHandler = (button, target) => {
+  button.addEventListener("click", () => {
+    if (target.classList.contains("expanded")) {
+      target.classList.remove("expanded");
+      button.textContent = "More";
+    } else {
+      target.classList.add("expanded");
+      button.textContent = "Hide";
+    }
+  });
+};
 
-toggleRightButton.addEventListener("click", () => {
-  if (infoBlock.classList.contains("expanded")) {
-    infoBlock.classList.remove("expanded");
-    toggleRightButton.textContent = "More";
-  } else {
-    infoBlock.classList.add("expanded");
-    toggleRightButton.textContent = "Hide";
-  }
-});
-
-toggleRightButton.addEventListener("click", () => {
-  if (infoBlock.classList.contains("expanded")) {
-    infoBlock.classList.remove("expanded");
-    toggleRightButton.textContent = "More";
-  } else {
-    infoBlock.classList.add("expanded");
-    toggleRightButton.textContent = "Hide";
-  }
-});
-
-toggleButtonProfile.addEventListener("click", () => {
-  if (infoAbout.classList.contains("expanded")) {
-    infoAbout.classList.remove("expanded");
-    toggleButtonProfile.textContent = "More";
-  } else {
-    infoAbout.classList.add("expanded");
-    toggleButtonProfile.textContent = "Hide";
-  }
-});
+toggleHandler(toggleButton, infoContainer);
+toggleHandler(toggleRightButton, infoBlock);
+toggleHandler(toggleButtonProfile, infoAbout);
+toggleHandler(toggleButtonMobile, infoContainerMobile);
+toggleHandler(toggleRightButtonMobile, infoBlockRightMobile);
+toggleHandler(toggleButtonProfileMobile, infoAboutMobile);
 
 function updateBackground() {
-  if (checkbox.checked) {
-    menu.style.transform = "none";
+  if (checkbox.checked || checkbox2.checked) {
+    menu.style.transform = "translate(0, 0)";
   } else {
-    menu.style.transform = "translate(-100%, 0)";
+    menu.style.transform = "translate(-200%, 0)";
   }
 }
 
-// Добавляем обработчик событий
 checkbox.addEventListener("change", updateBackground);
+checkbox2.addEventListener("change", updateBackground);
 
-// Устанавливаем начальное состояние
 updateBackground();
-

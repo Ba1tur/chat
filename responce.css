@@ -35,15 +35,12 @@
 
   cursor: pointer;
 
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  opacity: 0;
+  z-index: 2;
 
   -webkit-touch-callout: none;
 }
 
-/*
-  * Just a quick hamburger
-  */
 #menuToggle span {
   display: block;
   width: 33px;
@@ -70,35 +67,21 @@
   transform-origin: 0% 100%;
 }
 
-/* 
-  * Transform all the slices of hamburger
-  * into a crossmark.
-  */
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-21px, -21px);
   background: #ffffff;
 }
 
-/*
-  * But let's hide the middle one.
-  */
 #menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.3, 0.3);
 }
 
-/*
-  * Ohyeah and the last one should go the other direction
-  */
 #menuToggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -2px);
 }
 
-/*
-  * Make this absolute positioned
-  * at the top left of the screen
-  */
 #menu {
   position: absolute;
 
@@ -106,6 +89,7 @@
   width: 100vw;
   height: 100vh;
   top: 0;
+  left: 0;
   padding-left: 20px;
   padding-top: 100px;
   box-sizing: border-box;
@@ -114,7 +98,6 @@
   background: #0d1d32;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
 
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
@@ -129,13 +112,6 @@
 #menu li label {
   cursor: pointer;
 }
-
-/*
-  * And let's slide it in from the left
-  */
-
-
-
 
 .header-navbar-mobile {
   display: flex;
@@ -155,6 +131,14 @@
   background: #fff;
 
   border-radius: 50%;
+}
+
+.header-navbar-mobile__avatar > input {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+
+  opacity: 0;
 }
 
 .header-navbar-mobile__avatar:nth-child(2) {
@@ -236,17 +220,8 @@
   padding: 0 10px 0 10px;
   justify-content: center;
   align-items: center;
-  /* background-color: rgba(0, 0, 0, 0.5); */
   opacity: 1;
   animation: modal-show 0.5s 1 forwards;
-}
-
-.modal-boy {
-  display: block;
-}
-
-.modal-girl {
-  display: none;
 }
 
 .modal-content-boy,
@@ -475,7 +450,7 @@
   height: 30px;
   object-fit: cover;
 
-  filter: brightness(0) invert(1); /* Сделать SVG белым */
+  filter: brightness(0) invert(1);
 }
 
 .header__block-mobile {
@@ -496,7 +471,6 @@
 
 @media screen and (max-width: 1440px) {
   .sidebar {
-    /* display: none; */
     width: 200px;
     padding-right: 50px;
   }
@@ -605,6 +579,32 @@
   .boy-side {
     border-radius: 0 0 0 15px;
   }
+  .footer {
+    margin-top: 40px;
+  }
+  .container {
+    position: relative;
+    height: 100vh;
+  }
+  .main {
+    height: 100%;
+  }
+  .messenger-block {
+    height: 95%;
+  }
+  .boy-side {
+    height: 100%;
+  }
+  .chat {
+    height: 100%;
+    overflow: hidden;
+  }
+  .girl-side {
+    height: 100%;
+  }
+  .chat-header__info-block {
+    width: 190px;
+  }
 }
 
 @media screen and (max-width: 986px) {
@@ -615,7 +615,7 @@
     display: block;
     width: 100%;
     height: 100vh;
-    padding: 0;
+    padding: 0 0 120px 0;
   }
   .modal-boy {
     top: 75px;
@@ -651,31 +651,33 @@
   .chat {
     max-width: 530px;
   }
+  .shared-images__block {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .container {
     padding: 0 1% 0 1%;
+    overflow: hidden;
   }
   .girl-side {
     display: none;
   }
-  .modal-girl-side{
-    padding: 0;
-    height: 100vh;
-  }
-  .girl-side__form{
-    display: none;
-  }
-  .girls-side__information{
-    width: 100%;
-  }
-  .profile-block__buttons{
-    gap: 10px 30px;
-  }
-  .modal-girl-side{
+  .modal-girl-side {
     display: block;
     width: 100%;
+    padding: 0 0 120px 0;
+    height: 100vh;
+  }
+  .girl-side__form {
+    display: none;
+  }
+  .girls-side__information {
+    width: 100%;
+  }
+  .profile-block__buttons {
+    gap: 10px 30px;
   }
   .header-navbar-mobile {
     display: flex;
@@ -688,7 +690,7 @@
     flex-direction: column;
     gap: 20px;
   }
-  .burger-container{
+  .burger-container {
     display: none;
   }
   .header__block {
@@ -711,7 +713,8 @@
   .chat-header-mobile {
     display: flex;
   }
-  .modal-boys{
+  .modal-boys,
+  .modal-girls {
     top: 90px;
   }
   .chat-header-mobile__profile {
@@ -739,6 +742,18 @@
   .chat-header__buttons {
     display: none;
   }
+  #menu {
+    max-width: 766px;
+    top: 90px;
+    padding-top: 20px;
+  }
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
+  .chat-header__info-block {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 680px) {
@@ -754,7 +769,7 @@
 }
 
 @media screen and (max-width: 517px) {
-  .header{
+  .header {
     padding: 10px;
   }
   .header-navbar-mobile__avatar {
@@ -768,7 +783,7 @@
     -o-transform: scale(1, 1);
     transform: scale(1, 1);
   }
-  .header__block-mobile__right{
+  .header__block-mobile__right {
     width: 265px;
   }
   .header__block-mobile__right__time-block {
@@ -776,36 +791,33 @@
     width: 100%;
     height: 45px;
   }
-  .header__block-mobile__right__time-block > p{
+  .header__block-mobile__right__time-block > p {
     font-size: 15px;
   }
   .circleProgress_wrapper {
     left: 2px;
   }
-  .notfilication-mobile{
+  .notfilication-mobile {
     width: 45px;
     height: 45px;
   }
-  .notfilication-num{
+  .notfilication-num {
     top: 10px;
     width: 16px;
     height: 16px;
     right: 9px;
   }
-  .notfilication-mobile__plus{
+  .notfilication-mobile__plus {
     font-size: 30px;
     top: 19px;
   }
-  .modal-girls{
-    top: 60px;
-  }
-  .chat-header-mobile__profile > img{
+  .chat-header-mobile__profile > img {
     width: 50px;
     height: 50px;
   }
-  .chat-header-mobile__profile > h4{
+  .chat-header-mobile__profile > h4 {
     font-size: 16px;
-  } 
+  }
   .chat-header-mobile__icons {
     gap: 15px;
   }
@@ -813,48 +825,75 @@
     width: 25px;
     height: 25px;
   }
-  .left-msg{
+  .left-msg {
     padding-left: 10px;
   }
-  .modal-boys {
+  .right-msg {
+    padding-right: 10px;
+  }
+  .modal-boys,
+  .modal-girls {
     top: 75px;
+  }
+  #menu {
+    top: 80px;
   }
 }
 
-@media screen and (max-width:460px) {
-  .header{
+@media screen and (max-width: 460px) {
+  .header {
     padding: 10px;
   }
-  .chat-header{
+  .chat-header {
     padding: 5px 10px 0 10px;
   }
-  .msger-chat{
+  .msger-chat {
     padding: 20px 10px 80px 10px;
   }
-  .msg-bubble{
+  .msg-bubble {
     max-width: 300px;
   }
-  .left-msg{
+  .left-msg {
     padding-left: 0;
     flex-direction: row;
   }
-  .right-msg{
+  .right-msg {
     flex-direction: row-reverse;
     padding-left: 0;
   }
-  .msg-bubble-left{
+  .msg-bubble-left {
     margin-left: 0;
   }
-  .msg-bubble-right{
+  .msg-bubble-right {
     margin-right: 0;
   }
-  .shared-images__block{
+  .shared-images__block {
     gap: 15px 12px;
     grid-template-columns: auto auto auto;
   }
-  .shared-images__block > img{
+  .shared-images__block > img {
     width: 75px;
     height: 75px;
+  }
+  .voice-message {
+    gap: 0;
+    justify-content: space-between;
+  }
+  .flex-col {
+    max-width: 210px;
+  }
+  .bars {
+    overflow: hidden;
+    max-width: 170px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .voice-message {
+    gap: 10px;
+  }
+  .bars {
+    max-width: 120px;
   }
 }
 
@@ -866,5 +905,3 @@
     opacity: 1;
   }
 }
-
-
