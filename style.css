@@ -360,13 +360,13 @@ button {
 
   border-radius: 15px;
   background: #9cc6ef;
-  padding: 5px 15px 3px 15px;
+  padding: 15px 15px 10px 15px;
 }
 
 .toggle-button {
   position: absolute;
   width: 50px;
-  top: 5px;
+  top: 15px;
   right: 5px;
 
   font-size: 15px;
@@ -387,6 +387,7 @@ button {
   display: flex;
   justify-content: space-between;
   gap: 10px;
+  margin-bottom: 12px;
 }
 
 .information_block > h4 {
@@ -412,7 +413,7 @@ button {
   width: 100%;
 
   border-radius: 15px;
-  padding: 5px 15px 15px 15px;
+  padding: 15px 15px 15px 15px;
   background: #fdfdfd;
   margin-top: 5px;
 }
@@ -423,6 +424,7 @@ button {
   align-items: center;
   margin-top: 5px;
   gap: 5px;
+  margin-bottom: 12px;
 }
 
 .boy-side__form__block > h4 {
@@ -875,7 +877,7 @@ button {
   overflow: hidden;
   border-radius: 15px;
   background: #f784bd;
-  padding: 5px 15px 3px 15px;
+  padding: 15px 15px 3px 15px;
 }
 
 .girls-side__information.expanded {
@@ -885,7 +887,7 @@ button {
 .girls-side__information > button {
   width: 70px;
   position: absolute;
-  top: 5px;
+  top: 15px;
   right: 0;
 }
 
@@ -896,13 +898,12 @@ button {
 
 .girl-side__form > h2 {
   font-size: 14px;
-  padding-left: 5px;
 }
 
 .girl-side__form {
   width: 100%;
   border-radius: 15px;
-  padding: 5px 15px 15px 15px;
+  padding: 15px;
   background: #fdfdfd;
   margin-top: 5px;
 }
@@ -913,6 +914,7 @@ button {
   align-items: center;
   margin-top: 5px;
   gap: 5px;
+  margin-bottom: 12px;
 }
 
 .girl-side__form__block > h4 {
