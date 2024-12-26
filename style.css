@@ -271,13 +271,35 @@ button {
   padding-right: 35px;
 }
 
+.header-profile__form{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-profile__form > button{
+  width: 32px;
+  height: 30px;
+
+  border-radius: 8px;
+  background: #ffccd0;
+  padding: 10px;
+  background-image: url("./assets/right-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 17px;
+  background-position: center;
+  border: none;
+}
+
 .header-profile__hints {
   width: 265px;
-  height: 25px;
+  height: 30px;
   background: #f4f5f9;
   border-radius: 10px;
   resize: none;
   outline: none;
+  font-size: 13px;
+  padding: 3px 0 0 10px;
   border: none;
   background: #ffccd0;
 }
@@ -309,7 +331,7 @@ button {
 
 .messenger-block {
   display: flex;
-  height: 95.5%;
+  height: 92.5%;
 }
 
 .boy-side {
