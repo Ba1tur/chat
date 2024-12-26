@@ -368,7 +368,8 @@ button {
 }
 
 .boy-side__information > h2 {
-  font-size: 14px;
+  font-size: 18px;
+  color: #3c3c3c;
 }
 
 .boy-side__information {
@@ -389,11 +390,11 @@ button {
 .toggle-button {
   position: absolute;
   width: 50px;
-  top: 15px;
-  right: 5px;
+  top: 20px;
+  right: 7px;
 
   font-size: 15px;
-  color: #b4b4b5;
+  color: #b7b7b8;
   background: none;
   border: none;
 }
@@ -429,7 +430,8 @@ button {
 }
 
 .boy-side__form > h2 {
-  font-size: 14px;
+  font-size: 18px;
+  color: #252525;
 }
 
 .boy-side__form {
@@ -452,6 +454,7 @@ button {
 
 .boy-side__form__block > h4 {
   font-size: 14px;
+  color: #252525;
 }
 
 .boy-side__form__block > input {
@@ -822,7 +825,8 @@ button {
 }
 
 .girls-side__information > h2 {
-  font-size: 14px;
+  font-size: 18px;
+  color: #252525;
 }
 
 .profile-block {
@@ -850,6 +854,7 @@ button {
 
 .profile-block__avatar > h4 {
   margin-top: 10px;
+  color: #252525;
 }
 
 .profile-block__avatar > p {
@@ -917,10 +922,10 @@ button {
 }
 
 .girls-side__information > button {
-  width: 70px;
+  width: 50px;
   position: absolute;
   top: 15px;
-  right: 0;
+  right: 7px;
 }
 
 .girl-side__parent {
@@ -929,7 +934,8 @@ button {
 }
 
 .girl-side__form > h2 {
-  font-size: 14px;
+  font-size: 18px;
+  color: #252525;
 }
 
 .girl-side__form {
@@ -951,6 +957,7 @@ button {
 
 .girl-side__form__block > h4 {
   font-size: 14px;
+  color: #252525;
 }
 
 .girl-side__form__block > input {
@@ -982,6 +989,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-right: 4px;
 }
 
 .shared-images__header.profile {
@@ -989,7 +997,7 @@ button {
 }
 
 .shared-images__header > h4 {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .shared-images__header > button {
@@ -1068,6 +1076,7 @@ button {
 .modal-boy-form__parent > h2 {
   text-align: center;
   font-size: 28px;
+  color: #252525;
 }
 
 .modal-boy-form__parent > .boy-side__form {
