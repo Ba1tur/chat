@@ -369,7 +369,7 @@ button {
 
 .boy-side__information > h2 {
   font-size: 18px;
-  color: #3c3c3c;
+  color: #3c3c3c; 
 }
 
 .boy-side__information {
@@ -394,7 +394,7 @@ button {
   right: 7px;
 
   font-size: 15px;
-  color: #b7b7b8;
+  color: #786969;
   background: none;
   border: none;
 }
